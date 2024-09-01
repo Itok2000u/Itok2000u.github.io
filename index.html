@@ -1,9 +1,101 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My Personal Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiao Ye's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77d42a 3px solid;
+        }
+        header a, header h1 {
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 20px 0;
+        }
+        .photo img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Website!</h1>
-    <p>This is a simple page hosted on GitHub Pages.</p>
+    <header>
+        <div class="container">
+            <h1>Xiao Ye's Personal Website</h1>
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#experience">Experience</a>
+                <a href="#publication">Publication</a>
+                <a href="#research">Research Interest</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- 照片部分 -->
+        <section class="section photo">
+            <img src="xiao.jpeg" alt="Xiao Ye Photo">
+        </section>
+
+        <!-- 关于我部分 -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Xiao Ye is a passionate researcher in the field of Computer Science, specializing in AI and cognitive psychology. With a solid educational background and hands-on experience, Xiao is dedicated to advancing the field of AI through innovative research and practical applications.</p>
+        </section>
+
+        <!-- 工作经验部分 -->
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <p><strong>IA LAB, CLSP, JHU (Dec. 2022 - present):</strong> Developed a novel analogy benchmark comprising 1,000+ curated instances, harnessing insights from cognitive science to challenge and evaluate the inferential capabilities of AI models such as GPT-4 and Bard.</p>
+            <p><strong>CLSP, JHU (June. 2022 - Dec.2022):</strong> Specialized in fine-tuning the ATOMIC dataset on T5 pre-trained language models utilizing the Huggingface Transformers library in a PyTorch environment...</p>
+            <!-- 继续添加其他工作经验 -->
+        </section>
+
+        <!-- 出版物部分 -->
+        <section id="publication" class="section">
+            <h2>Publication</h2>
+            <p>AnaloBench: Benchmarking the Identification of Abstract and Long-context Analogies - Under Review</p>
+        </section>
+
+        <!-- 研究兴趣部分 -->
+        <section id="research" class="section">
+            <h2>Research Interest</h2>
+            <p>Xiao's research interests lie at the intersection of AI, machine learning, and cognitive psychology, with a particular focus on natural language processing, analogy recognition, and model interpretability.</p>
+        </section>
+    </div>
 </body>
 </html>
